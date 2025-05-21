@@ -95,23 +95,12 @@ class AlbumDetailScreen extends StatelessWidget {
                               errorBuilder: (context, error, stackTrace) {
                                 return Container(
                                   color: Colors.grey[100],
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Icon(
-                                        Icons.broken_image,
-                                        color: Colors.red[300],
-                                        size: 40,
-                                      ),
-                                      const SizedBox(height: 8),
-                                      Text(
-                                        'Image not available',
-                                        style: TextStyle(
-                                          color: Colors.red[300],
-                                          fontSize: 12,
-                                        ),
-                                      ),
-                                    ],
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.broken_image,
+                                      color: Colors.red[300],
+                                      size: 40,
+                                    ),
                                   ),
                                 );
                               },
